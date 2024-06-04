@@ -1,0 +1,139 @@
+/*--------------------------------------------------*/
+/*BASIC SETUP*/
+/*--------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix {zoom: 1;}
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+html {
+    font-size: 63%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------------------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*--------------------------------------------------*/
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: medium;
+}
+
+.btn-primary {
+    color: white;
+    background: #16a083;
+}
+
+
+/*--------------------------------------------------*/
+/*NAVBAR*/
+/*--------------------------------------------------*/
+
+/* DESKTOP MODE */
+
+.navbar input[type='checkbox'],
+.navbar .hamburger-lines {
+    display: none;
+}
+
+.navbar {
+    box-shadow: 0 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    color: black;
+    background: white;
+    opacity: 0.90;
+    z-index: 999;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.items {
+    order: 2;
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-size: 15px;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #117964;
+    font-weight: 300;
+}
+
+/*--------------------------------------------------*/
+/*HEADER*/
+/*--------------------------------------------------*/
+
+.hero {
+    height: 100vh;
+    background: url("images/img/header-image2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    line-height: 40px;
+}
+
+/* .hero a {
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    background-color: green;
+    border-radius: 90px;
+    color: white;
+    width: 150px;
+    padding: 10px 20px;
+} */
+
