@@ -141,7 +141,6 @@ body {
 #about {
     padding: 50px 0px;
     background-color: #f5f5f7;
-    height: 100vh;
 }
 
 .about {
@@ -195,3 +194,201 @@ body {
     max-width: 100%;
 }
 
+
+/*--------------------------------------------------*/
+/*FOOD*/
+/*--------------------------------------------------*/
+
+#food {
+    padding: 50px 0;
+}
+
+#food h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.food {
+    display: flex;
+    justify-content: space-between;
+}
+
+.food img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-container {
+    margin: 0 1rem;
+    position: relative;
+}
+
+.img-content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+.img-content h3 {
+    color: white;
+    font-size: 3rem;
+}
+
+.img-content a {
+    font-size: 1.2rem;
+}
+
+.img-container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.871);
+    opacity: 0;
+    z-index: 1;
+
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-container:hover::after {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.img-container:hover .img-content {
+    opacity: 1;
+    top: 40%;
+}
+
+/*--------------------------------------------------*/
+/*MENU*/
+/*--------------------------------------------------*/
+
+#menu {
+    background-color: white;
+    padding: 50px 0px;
+}
+
+.menu-heading {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 400;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+    gap: 30px;
+}
+
+.food-img img {
+    /* display: block; */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu-item {
+    display: flex;
+    flex: 1 1 400px;
+    justify-content: space-evenly;
+}
+
+.food-description {
+    margin: auto 1.5rem;
+}
+
+.food-title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444;
+}
+
+.food-description p {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.food-description .price {
+    color: #117964;
+    font-weight: 700;
+}
+
+/*--------------------------------------------------*/
+/*TESTIMONIALS*/
+/*--------------------------------------------------*/
+
+#testimonials {
+    padding: 5rem 0;
+    background: rgb(243, 243, 243);
+}
+
+.testimonial-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #555;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding: 1rem 10rem;
+}
+
+.reviews-container .checked {
+    color: #ff9529;
+}
+
+.single-review {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.single-review .review-text {
+    margin: 2rem 0;
+    color: #444;
+    flex-grow: 1;
+}
+
+.single-review .customer {
+    justify-self: flex-end;
+}
+
+.pic img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+}
